@@ -5,11 +5,10 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="<?= $directoryAsset ?>/img/user2-160x160.jpg" class="img-circle" alt="User Image"/>
+                <img src="<?= $directoryAsset ?>/img/log.jpg" class="img-circle" alt="User Image"/>
             </div>
             <div class="pull-left info">
-                <p>Alexander Pierce</p>
-
+                <p><?= Yii::$app->user->identity->username ?></p>
                 <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
         </div>
@@ -30,12 +29,12 @@
             [
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
-                    ['label' => 'Menu Yii2', 'options' => ['class' => 'header']],
-                    ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii']],
-                    ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug']],
-                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
+                    ['label' => 'Menu', 'options' => ['class' => 'header']],
+                    ['label' => 'Dashboard', 'icon' => 'dashboard', 'url' => ['/']],
+                    
+                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest], 
                     [
-                        'label' => 'Some tools',
+                        'label' => 'Same tools',
                         'icon' => 'share',
                         'url' => '#',
                         'items' => [
@@ -60,6 +59,19 @@
                             ],
                         ],
                     ],
+                    [
+                        'label' => 'Asal Wisatawan',
+                        'icon' => ' fas fa-globe ',
+                        'url' => '#',
+                        'items' => [
+                            ['label' => 'Negara', 'icon' => ' fas fa-flag', 'url' => ['/negara'],],
+                            ['label' => 'Provinsi', 'icon' => ' fa fa-first-order', 'url' => ['/provinsi'],
+                            ],    
+                        ],
+                    ],
+
+                    ['label' => 'Laporan Kunjungan', 'icon' => ' fas fa-fax', 'url' => ['/laporan-kunjungan']],
+                    ['label' => 'User', 'icon' => 'users', 'url' => ['/users']],
                 ],
             ]
         ) ?>
