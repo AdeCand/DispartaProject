@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a8e49864df6ba4dda1badc45a92cfef",
+    "content-hash": "2e904ebcdb7c113c6d16db2fc5473957",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -79,7 +79,7 @@
             "version": "3.3.11",
             "source": {
                 "type": "git",
-                "url": "https://github.com/RobinHerbots/Inputmask.git",
+                "url": "git@github.com:RobinHerbots/Inputmask.git",
                 "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b"
             },
             "dist": {
@@ -578,6 +578,156 @@
                 "source": "https://github.com/FortAwesome/Font-Awesome/tree/v4.7.0"
             },
             "time": "2016-10-24T15:52:54+00:00"
+        },
+        {
+            "name": "mervick/material-design-icons",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mervick/material-design-icons.git",
+                "reference": "12b5064d3f791a95172087328ed0c49daac0b8f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mervick/material-design-icons/zipball/12b5064d3f791a95172087328ed0c49daac0b8f7",
+                "reference": "12b5064d3f791a95172087328ed0c49daac0b8f7",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "CC-BY-4.0"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Izman",
+                    "email": "izmanw@gmail.com"
+                }
+            ],
+            "description": "Google Material Design Icons For Using With Bootstrap",
+            "homepage": "http://github.com/mervick/material-design-icons",
+            "keywords": [
+                "bootstrap",
+                "google",
+                "icons",
+                "icons-web-font",
+                "material",
+                "material-design",
+                "web-font"
+            ],
+            "support": {
+                "issues": "https://github.com/mervick/material-design-icons/issues",
+                "source": "http://github.com/mervick/material-design-icons"
+            },
+            "time": "2015-12-06T07:05:24+00:00"
+        },
+        {
+            "name": "mervick/yii2-material-design-icons",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mervick/yii2-material-design-icons.git",
+                "reference": "b3666248fc89d098372b369796da05495455706a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mervick/yii2-material-design-icons/zipball/b3666248fc89d098372b369796da05495455706a",
+                "reference": "b3666248fc89d098372b369796da05495455706a",
+                "shasum": ""
+            },
+            "require": {
+                "mervick/material-design-icons": "~1.0",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii\\materialicons\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Izman",
+                    "email": "izmanw@gmail.com"
+                }
+            ],
+            "description": "Asset Bundle For Yii2 Framework With Google Material Design Icons",
+            "homepage": "http://github.com/mervick/yii2-material-design-icons",
+            "keywords": [
+                "asset",
+                "asset-bundle",
+                "bootstrap",
+                "bundle",
+                "google",
+                "icons",
+                "icons-web-font",
+                "material",
+                "material-design",
+                "web-font",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/mervick/yii2-material-design-icons/issues",
+                "source": "http://github.com/mervick/yii2-material-design-icons"
+            },
+            "time": "2015-07-04T10:07:41+00:00"
+        },
+        {
+            "name": "ricar2ce/yii2-material-theme",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ricar2ce/yii2-material-theme.git",
+                "reference": "384038bd931cf3b1c604c1df25670be3b7e4ca05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ricar2ce/yii2-material-theme/zipball/384038bd931cf3b1c604c1df25670be3b7e4ca05",
+                "reference": "384038bd931cf3b1c604c1df25670be3b7e4ca05",
+                "shasum": ""
+            },
+            "require": {
+                "mervick/yii2-material-design-icons": "~1.0",
+                "php": ">=5.4.0",
+                "yidas/yii2-fontawesome": "^4.0",
+                "yiisoft/yii2": "~2.0.14",
+                "yiisoft/yii2-bootstrap": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "rce\\material\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ricardo Comendador Escalona",
+                    "email": "ricar2ce@gmail.com"
+                }
+            ],
+            "description": "Material Theme for Yii2",
+            "keywords": [
+                "creative",
+                "extension",
+                "material",
+                "theme",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/ricar2ce/yii2-material-theme/issues",
+                "source": "https://github.com/ricar2ce/yii2-material-theme/tree/v1.1.0"
+            },
+            "time": "2019-06-15T08:43:04+00:00"
         },
         {
             "name": "rmrevin/yii2-fontawesome",
@@ -1116,6 +1266,55 @@
                 }
             ],
             "time": "2021-01-07T16:49:33+00:00"
+        },
+        {
+            "name": "yidas/yii2-fontawesome",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yidas/yii2-fontawesome.git",
+                "reference": "268306a1f51e8ae8bc66913e4620707a4cd9be06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yidas/yii2-fontawesome/zipball/268306a1f51e8ae8bc66913e4620707a4cd9be06",
+                "reference": "268306a1f51e8ae8bc66913e4620707a4cd9be06",
+                "shasum": ""
+            },
+            "require": {
+                "fortawesome/font-awesome": "~4.7",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yidas\\yii\\fontawesome\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nick Tsai",
+                    "email": "myintaer@gmail.com",
+                    "homepage": "https://github.com/yidas/"
+                }
+            ],
+            "description": "Font Awesome Asset Bundle for Yii2 framework",
+            "keywords": [
+                "asset",
+                "asset bundle",
+                "font awesome",
+                "yii"
+            ],
+            "support": {
+                "issues": "https://github.com/yidas/yii2-fontawesome/issues",
+                "source": "https://github.com/yidas/yii2-fontawesome"
+            },
+            "time": "2018-10-09T03:12:24+00:00"
         },
         {
             "name": "yiisoft/yii2",
