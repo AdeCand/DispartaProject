@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "ac791c4c12736543c23bcf150e967ff2",
+=======
+    "content-hash": "2e904ebcdb7c113c6d16db2fc5473957",
+>>>>>>> 446881da49d918c89aab696fb221f2593ba249ee
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -97,7 +101,7 @@
             "version": "3.3.11",
             "source": {
                 "type": "git",
-                "url": "https://github.com/RobinHerbots/Inputmask.git",
+                "url": "git@github.com:RobinHerbots/Inputmask.git",
                 "reference": "5e670ad62f50c738388d4dcec78d2888505ad77b"
             },
             "dist": {
@@ -651,6 +655,7 @@
             "time": "2016-10-24T15:52:54+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "hosannahighertech/yii2-light-bootstrap",
             "version": "0.01",
             "source": {
@@ -698,6 +703,8 @@
             "time": "2017-12-29T15:23:29+00:00"
         },
         {
+=======
+>>>>>>> 446881da49d918c89aab696fb221f2593ba249ee
             "name": "mervick/material-design-icons",
             "version": "1.1.0",
             "source": {
@@ -797,6 +804,7 @@
             "time": "2015-07-04T10:07:41+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "ramosisw/yii2-material-dashboard",
             "version": "dev-master",
             "source": {
@@ -855,6 +863,8 @@
             "time": "2018-12-13T18:35:07+00:00"
         },
         {
+=======
+>>>>>>> 446881da49d918c89aab696fb221f2593ba249ee
             "name": "ricar2ce/yii2-material-theme",
             "version": "v1.1.0",
             "source": {
