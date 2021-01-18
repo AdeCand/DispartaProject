@@ -14,7 +14,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id_user')->textInput() ?>
 
-    <?= $form->field($model, 'kategori_akw')->textInput() ?>
+    <?= $form->field($model, 'jenis_wisatawan')->textInput(['maxlength' => true]) ?>
 
     <?= $form->field($model, 'negara')->textInput() ?>
 

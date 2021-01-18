@@ -7,19 +7,17 @@ use Yii;
 /**
  * This is the model class for table "laporan_kunjungan".
  *
- * @property int $id
+ * @property int $id_laporan_kunjungan
  * @property int $id_user
- * @property int $kategori_akw
+ * @property string $jenis_wisatawan
  * @property int $negara
  * @property int $provinsi
  * @property int $pria
  * @property int $wanita
  * @property int $jumlah
  *
- * @property KategoriAkw $kategoriAkw
  * @property Negara $negara0
  * @property Provinsi $provinsi0
- * @property Users $user
  */
 class LaporanKunjungan extends \yii\db\ActiveRecord
 {
@@ -37,12 +35,11 @@ class LaporanKunjungan extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['id_user', 'kategori_akw', 'negara', 'provinsi', 'pria', 'wanita', 'jumlah'], 'required'],
-            [['id_user', 'kategori_akw', 'negara', 'provinsi', 'pria', 'wanita', 'jumlah'], 'integer'],
-            [['kategori_akw'], 'exist', 'skipOnError' => true, 'targetClass' => KategoriAkw::className(), 'targetAttribute' => ['kategori_akw' => 'id']],
-            [['negara'], 'exist', 'skipOnError' => true, 'targetClass' => Negara::className(), 'targetAttribute' => ['negara' => 'id']],
-            [['provinsi'], 'exist', 'skipOnError' => true, 'targetClass' => Provinsi::className(), 'targetAttribute' => ['provinsi' => 'id']],
-            [['id_user'], 'exist', 'skipOnError' => true, 'targetClass' => Users::className(), 'targetAttribute' => ['id_user' => 'id']],
+            [['id_user', 'jenis_wisatawan', 'negara', 'provinsi', 'pria', 'wanita', 'jumlah'], 'required'],
+            [['id_user', 'negara', 'provinsi', 'pria', 'wanita', 'jumlah'], 'integer'],
+            [['jenis_wisatawan'], 'string', 'max' => 25],
+            [['negara'], 'exist', 'skipOnError' => true, 'targetClass' => Negara::className(), 'targetAttribute' => ['negara' => 'id_negara']],
+            [['provinsi'], 'exist', 'skipOnError' => true, 'targetClass' => Provinsi::className(), 'targetAttribute' => ['provinsi' => 'id_provinsi']],
         ];
     }
 
@@ -52,9 +49,9 @@ class LaporanKunjungan extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
+            'id_laporan_kunjungan' => 'Id Laporan Kunjungan',
             'id_user' => 'Id User',
-            'kategori_akw' => 'Kategori Akw',
+            'jenis_wisatawan' => 'Jenis Wisatawan',
             'negara' => 'Negara',
             'provinsi' => 'Provinsi',
             'pria' => 'Pria',
@@ -64,23 +61,13 @@ class LaporanKunjungan extends \yii\db\ActiveRecord
     }
 
     /**
-     * Gets query for [[KategoriAkw]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
-    public function getKategoriAkw()
-    {
-        return $this->hasOne(KategoriAkw::className(), ['id' => 'kategori_akw']);
-    }
-
-    /**
      * Gets query for [[Negara0]].
      *
      * @return \yii\db\ActiveQuery
      */
     public function getNegara0()
     {
-        return $this->hasOne(Negara::className(), ['id' => 'negara']);
+        return $this->hasOne(Negara::className(), ['id_negara' => 'negara']);
     }
 
     /**
@@ -90,16 +77,6 @@ class LaporanKunjungan extends \yii\db\ActiveRecord
      */
     public function getProvinsi0()
     {
-        return $this->hasOne(Provinsi::className(), ['id' => 'provinsi']);
-    }
-
-    /**
-     * Gets query for [[User]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
-    public function getUser()
-    {
-        return $this->hasOne(Users::className(), ['id' => 'id_user']);
+        return $this->hasOne(Provinsi::className(), ['id_provinsi' => 'provinsi']);
     }
 }

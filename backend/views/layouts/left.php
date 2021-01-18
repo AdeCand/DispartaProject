@@ -30,48 +30,53 @@
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
                     ['label' => 'Menu', 'options' => ['class' => 'header']],
-                    ['label' => 'Dashboard', 'icon' => 'dashboard', 'url' => ['/']],
+                    ['label' => 'Dashboard', 'icon' => 'dashboard', 'url' => ['']],
                     
-                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest], 
+                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
+
                     [
-                        'label' => 'Same tools',
-                        'icon' => 'share',
+                        'label' => 'Master',
+                        'icon' => 'database',
                         'url' => '#',
                         'items' => [
-                            ['label' => 'Gii', 'icon' => 'file-code-o', 'url' => ['/gii'],],
-                            ['label' => 'Debug', 'icon' => 'dashboard', 'url' => ['/debug'],],
                             [
-                                'label' => 'Level One',
-                                'icon' => 'circle-o',
+                                'label' => 'Data Kunjungan Wisata',
+                                'icon' => 'map',
                                 'url' => '#',
                                 'items' => [
-                                    ['label' => 'Level Two', 'icon' => 'circle-o', 'url' => '#',],
-                                    [
-                                        'label' => 'Level Two',
-                                        'icon' => 'circle-o',
-                                        'url' => '#',
-                                        'items' => [
-                                            ['label' => 'Level Three', 'icon' => 'circle-o', 'url' => '#',],
-                                            ['label' => 'Level Three', 'icon' => 'circle-o', 'url' => '#',],
-                                        ],
-                                    ],
+                                    ['label' => 'Akomodasi', 'icon' => 'hotel', 'url' => ['/akomodasi'],],
+                                    ['label' => 'Daya Tarik Wisata', 'icon' => 'tripadvisor', 'url' => ['/dtw'],],
+                                ],
+                            ],
+                            [
+                                'label' => 'Data Lokasi',
+                                'icon' => 'map-marker',
+                                'url' => '#',
+                                'items' => [
+                                    ['label' => 'Negara', 'icon' => 'flag-checkered', 'url' => ['/negara'],],
+                                    ['label' => 'Provinsi', 'icon' => 'flag', 'url' => ['/provinsi'],],
+                                    ['label' => 'Kecamatan', 'icon' => 'flag-o', 'url' => ['/kecamatan'],],
                                 ],
                             ],
                         ],
                     ],
+
                     [
-                        'label' => 'Asal Wisatawan',
-                        'icon' => ' fas fa-globe ',
+                        'label' => 'Report',
+                        'icon' => 'file-text',
                         'url' => '#',
                         'items' => [
-                            ['label' => 'Negara', 'icon' => ' fas fa-flag', 'url' => ['/negara'],],
-                            ['label' => 'Provinsi', 'icon' => ' fa fa-first-order', 'url' => ['/provinsi'],
+                            ['label' => 'Daya Tarik Wisata', 'icon' => 'tripadvisor', 'url' => ['/rekap-dtw'],],
+                            ['label' => 'Akomodasi', 'icon' => 'hotel', 'url' => ['/rekap-akomodasi'],
                             ],    
+                            ['label' => 'Jumlah Wisatawan', 'icon' => 'line-chart', 'url' => ['/rekap-jumlah-wisatawan'],
+                            ],  
+                            ['label' => 'Laporan Kunjungan', 'icon' => 'area-chart', 'url' => ['/laporan-kunjungan'],
+                            ], 
                         ],
                     ],
-
-                    ['label' => 'Laporan Kunjungan', 'icon' => ' fas fa-fax', 'url' => ['/laporan-kunjungan']],
-                    ['label' => 'User', 'icon' => 'users', 'url' => ['/users']],
+                
+                    ['label' => 'User', 'icon' => 'users', 'url' => ['/user']],
                 ],
             ]
         ) ?>

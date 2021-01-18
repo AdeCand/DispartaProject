@@ -67,7 +67,7 @@ class NegaraController extends Controller
         $model = new Negara();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->id_negara]);
         }
 
         return $this->render('create', [
@@ -87,7 +87,7 @@ class NegaraController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->id_negara]);
         }
 
         return $this->render('update', [

@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model backend\models\LaporaKunjunganCari */
+/* @var $model backend\models\LaporanKunjunganCari */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -15,11 +15,11 @@ use yii\widgets\ActiveForm;
         'method' => 'get',
     ]); ?>
 
-    <?= $form->field($model, 'id') ?>
+    <?= $form->field($model, 'id_laporan_kunjungan') ?>
 
     <?= $form->field($model, 'id_user') ?>
 
-    <?= $form->field($model, 'kategori_akw') ?>
+    <?= $form->field($model, 'jenis_wisatawan') ?>
 
     <?= $form->field($model, 'negara') ?>
 

@@ -7,7 +7,7 @@ use Yii;
 /**
  * This is the model class for table "negara".
  *
- * @property int $id
+ * @property int $id_negara
  * @property string $negara
  * @property string $kawasan
  *
@@ -40,7 +40,7 @@ class Negara extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'id' => 'ID',
+            'id_negara' => 'Id Negara',
             'negara' => 'Negara',
             'kawasan' => 'Kawasan',
         ];
@@ -53,6 +53,6 @@ class Negara extends \yii\db\ActiveRecord
      */
     public function getLaporanKunjungans()
     {
-        return $this->hasMany(LaporanKunjungan::className(), ['negara' => 'id']);
+        return $this->hasMany(LaporanKunjungan::className(), ['negara' => 'id_negara']);
     }
 }

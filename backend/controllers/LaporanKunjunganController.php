@@ -4,7 +4,7 @@ namespace backend\controllers;
 
 use Yii;
 use backend\models\LaporanKunjungan;
-use backend\models\LaporaKunjunganCari;
+use backend\models\LaporanKunjunganCari;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -35,7 +35,7 @@ class LaporanKunjunganController extends Controller
      */
     public function actionIndex()
     {
-        $searchModel = new LaporaKunjunganCari();
+        $searchModel = new LaporanKunjunganCari();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [
@@ -67,7 +67,7 @@ class LaporanKunjunganController extends Controller
         $model = new LaporanKunjungan();
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->id_laporan_kunjungan]);
         }
 
         return $this->render('create', [
@@ -87,7 +87,7 @@ class LaporanKunjunganController extends Controller
         $model = $this->findModel($id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['view', 'id' => $model->id]);
+            return $this->redirect(['view', 'id' => $model->id_laporan_kunjungan]);
         }
 
         return $this->render('update', [

@@ -4,7 +4,7 @@ use yii\helpers\Html;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel backend\models\LaporaKunjunganCari */
+/* @var $searchModel backend\models\LaporanKunjunganCari */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Laporan Kunjungans';
@@ -26,9 +26,9 @@ $this->params['breadcrumbs'][] = $this->title;
         'columns' => [
             ['class' => 'yii\grid\SerialColumn'],
 
-            'id',
+            'id_laporan_kunjungan',
             'id_user',
-            'kategori_akw',
+            'jenis_wisatawan',
             'negara',
             'provinsi',
             //'pria',

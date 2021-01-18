@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1a8e49864df6ba4dda1badc45a92cfef",
+    "content-hash": "ac791c4c12736543c23bcf150e967ff2",
     "packages": [
         {
             "name": "almasaeed2010/adminlte",
@@ -68,6 +68,24 @@
             },
             "require": {
                 "bower-asset/jquery": ">=1.9.1,<4.0"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
+            "name": "bower-asset/gentelella",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:puikinsh/gentelella.git",
+                "reference": "3448fdfdf16a41707d6e2a8154d592a88d85c41c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/puikinsh/gentelella/zipball/3448fdfdf16a41707d6e2a8154d592a88d85c41c",
+                "reference": "3448fdfdf16a41707d6e2a8154d592a88d85c41c"
             },
             "type": "bower-asset",
             "license": [
@@ -260,6 +278,59 @@
                 "source": "https://github.com/cebe/yii2-gravatar"
             },
             "time": "2013-12-10T17:49:58+00:00"
+        },
+        {
+            "name": "deyraka/yii2-material-dashboard",
+            "version": "v1.0.0-beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/deyraka/yii2-material-dashboard.git",
+                "reference": "d8affb5032fa0f65801dcfc16d58eb45ca31fba1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/deyraka/yii2-material-dashboard/zipball/d8affb5032fa0f65801dcfc16d58eb45ca31fba1",
+                "reference": "d8affb5032fa0f65801dcfc16d58eb45ca31fba1",
+                "shasum": ""
+            },
+            "require": {
+                "mervick/material-design-icons": "~1.0",
+                "mervick/yii2-material-design-icons": "~1.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "deyraka\\materialdashboard\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "deyraka",
+                    "email": "dey.raka53@gmail.com"
+                }
+            ],
+            "description": "Material Dashboard Theme for Yii 2.0",
+            "keywords": [
+                "asset",
+                "asset-bundle",
+                "bootstrap",
+                "bundle",
+                "dashboard",
+                "material",
+                "material-dashboard",
+                "material-design",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/deyraka/yii2-material-dashboard/issues",
+                "source": "https://github.com/deyraka/yii2-material-dashboard/tree/master"
+            },
+            "time": "2019-09-27T07:22:42+00:00"
         },
         {
             "name": "dmstr/yii2-adminlte-asset",
@@ -578,6 +649,261 @@
                 "source": "https://github.com/FortAwesome/Font-Awesome/tree/v4.7.0"
             },
             "time": "2016-10-24T15:52:54+00:00"
+        },
+        {
+            "name": "hosannahighertech/yii2-light-bootstrap",
+            "version": "0.01",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hosannahighertech/yii2-light-bootstrap.git",
+                "reference": "f7e75b7c176dce78a70b43ceaa332febe0c1d64c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hosannahighertech/yii2-light-bootstrap/zipball/f7e75b7c176dce78a70b43ceaa332febe0c1d64c",
+                "reference": "f7e75b7c176dce78a70b43ceaa332febe0c1d64c",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "hosannahighertech\\lbootstrap\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stefano Mtangoo",
+                    "email": "mwinjilisti@gmail.com"
+                }
+            ],
+            "description": "Yii2 Extension for Free Bootstrap Admin Template by Tim Creative. More details at https://www.creative-tim.com/product/light-bootstrap-dashboard",
+            "keywords": [
+                "admin",
+                "bootstrap",
+                "extension",
+                "themes",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/hosannahighertech/yii2-light-bootstrap/issues",
+                "source": "https://github.com/hosannahighertech/yii2-light-bootstrap/tree/master"
+            },
+            "time": "2017-12-29T15:23:29+00:00"
+        },
+        {
+            "name": "mervick/material-design-icons",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mervick/material-design-icons.git",
+                "reference": "12b5064d3f791a95172087328ed0c49daac0b8f7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mervick/material-design-icons/zipball/12b5064d3f791a95172087328ed0c49daac0b8f7",
+                "reference": "12b5064d3f791a95172087328ed0c49daac0b8f7",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT",
+                "CC-BY-4.0"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Izman",
+                    "email": "izmanw@gmail.com"
+                }
+            ],
+            "description": "Google Material Design Icons For Using With Bootstrap",
+            "homepage": "http://github.com/mervick/material-design-icons",
+            "keywords": [
+                "bootstrap",
+                "google",
+                "icons",
+                "icons-web-font",
+                "material",
+                "material-design",
+                "web-font"
+            ],
+            "support": {
+                "issues": "https://github.com/mervick/material-design-icons/issues",
+                "source": "http://github.com/mervick/material-design-icons"
+            },
+            "time": "2015-12-06T07:05:24+00:00"
+        },
+        {
+            "name": "mervick/yii2-material-design-icons",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mervick/yii2-material-design-icons.git",
+                "reference": "b3666248fc89d098372b369796da05495455706a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mervick/yii2-material-design-icons/zipball/b3666248fc89d098372b369796da05495455706a",
+                "reference": "b3666248fc89d098372b369796da05495455706a",
+                "shasum": ""
+            },
+            "require": {
+                "mervick/material-design-icons": "~1.0",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yii\\materialicons\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andrey Izman",
+                    "email": "izmanw@gmail.com"
+                }
+            ],
+            "description": "Asset Bundle For Yii2 Framework With Google Material Design Icons",
+            "homepage": "http://github.com/mervick/yii2-material-design-icons",
+            "keywords": [
+                "asset",
+                "asset-bundle",
+                "bootstrap",
+                "bundle",
+                "google",
+                "icons",
+                "icons-web-font",
+                "material",
+                "material-design",
+                "web-font",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/mervick/yii2-material-design-icons/issues",
+                "source": "http://github.com/mervick/yii2-material-design-icons"
+            },
+            "time": "2015-07-04T10:07:41+00:00"
+        },
+        {
+            "name": "ramosisw/yii2-material-dashboard",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ramosisw/yii2-material-dashboard.git",
+                "reference": "2d6458803f4b51f48f55e5e44e4705fed57e82ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ramosisw/yii2-material-dashboard/zipball/2d6458803f4b51f48f55e5e44e4705fed57e82ee",
+                "reference": "2d6458803f4b51f48f55e5e44e4705fed57e82ee",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "2.*",
+                "yiisoft/yii2-bootstrap": "2.*"
+            },
+            "default-branch": true,
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ramosisw\\CImaterial\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Julio C. Ramos",
+                    "email": "ramosisw@gmail.com"
+                }
+            ],
+            "description": "Material dashboard backend theme asset bundle for Yii 2.0 Framework",
+            "keywords": [
+                "admin",
+                "asset",
+                "backend",
+                "css",
+                "dashboard",
+                "extension",
+                "less",
+                "material",
+                "theme",
+                "yii2"
+            ],
+            "support": {
+                "source": "https://github.com/ramosisw/yii2-material-dashboard/tree/master"
+            },
+            "time": "2018-12-13T18:35:07+00:00"
+        },
+        {
+            "name": "ricar2ce/yii2-material-theme",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ricar2ce/yii2-material-theme.git",
+                "reference": "384038bd931cf3b1c604c1df25670be3b7e4ca05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ricar2ce/yii2-material-theme/zipball/384038bd931cf3b1c604c1df25670be3b7e4ca05",
+                "reference": "384038bd931cf3b1c604c1df25670be3b7e4ca05",
+                "shasum": ""
+            },
+            "require": {
+                "mervick/yii2-material-design-icons": "~1.0",
+                "php": ">=5.4.0",
+                "yidas/yii2-fontawesome": "^4.0",
+                "yiisoft/yii2": "~2.0.14",
+                "yiisoft/yii2-bootstrap": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "rce\\material\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ricardo Comendador Escalona",
+                    "email": "ricar2ce@gmail.com"
+                }
+            ],
+            "description": "Material Theme for Yii2",
+            "keywords": [
+                "creative",
+                "extension",
+                "material",
+                "theme",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/ricar2ce/yii2-material-theme/issues",
+                "source": "https://github.com/ricar2ce/yii2-material-theme/tree/v1.1.0"
+            },
+            "time": "2019-06-15T08:43:04+00:00"
         },
         {
             "name": "rmrevin/yii2-fontawesome",
@@ -1118,6 +1444,55 @@
             "time": "2021-01-07T16:49:33+00:00"
         },
         {
+            "name": "yidas/yii2-fontawesome",
+            "version": "4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yidas/yii2-fontawesome.git",
+                "reference": "268306a1f51e8ae8bc66913e4620707a4cd9be06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yidas/yii2-fontawesome/zipball/268306a1f51e8ae8bc66913e4620707a4cd9be06",
+                "reference": "268306a1f51e8ae8bc66913e4620707a4cd9be06",
+                "shasum": ""
+            },
+            "require": {
+                "fortawesome/font-awesome": "~4.7",
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "yidas\\yii\\fontawesome\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nick Tsai",
+                    "email": "myintaer@gmail.com",
+                    "homepage": "https://github.com/yidas/"
+                }
+            ],
+            "description": "Font Awesome Asset Bundle for Yii2 framework",
+            "keywords": [
+                "asset",
+                "asset bundle",
+                "font awesome",
+                "yii"
+            ],
+            "support": {
+                "issues": "https://github.com/yidas/yii2-fontawesome/issues",
+                "source": "https://github.com/yidas/yii2-fontawesome"
+            },
+            "time": "2018-10-09T03:12:24+00:00"
+        },
+        {
             "name": "yiisoft/yii2",
             "version": "2.0.40",
             "source": {
@@ -1440,6 +1815,68 @@
                 "wiki": "http://www.yiiframework.com/wiki/"
             },
             "time": "2018-09-23T22:00:47+00:00"
+        },
+        {
+            "name": "yiister/yii2-gentelella",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiister/yii2-gentelella.git",
+                "reference": "81080a3d0b84cabc783c45d5ecf6d97048972277"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiister/yii2-gentelella/zipball/81080a3d0b84cabc783c45d5ecf6d97048972277",
+                "reference": "81080a3d0b84cabc783c45d5ecf6d97048972277",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/gentelella": "*",
+                "php": ">=5.4.0",
+                "rmrevin/yii2-fontawesome": "~2.0",
+                "yiisoft/yii2": "~2.0.0",
+                "yiisoft/yii2-bootstrap": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "asset-installer-paths": {
+                    "npm-asset-library": "vendor/npm",
+                    "bower-asset-library": "vendor/bower"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yiister\\gentelella\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pavel Fedotov",
+                    "email": "fps.06@mail.ru",
+                    "homepage": "https://github.com/fps01",
+                    "role": "Creator"
+                }
+            ],
+            "description": "Free admin template for backend",
+            "keywords": [
+                "admin",
+                "asset",
+                "backend",
+                "bootsprap3",
+                "extension",
+                "gentelella",
+                "theme",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/yiister/yii2-gentelella/issues",
+                "source": "https://github.com/yiister/yii2-gentelella/tree/master"
+            },
+            "time": "2017-11-12T16:49:22+00:00"
         }
     ],
     "packages-dev": [
@@ -5504,7 +5941,10 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "ramosisw/yii2-material-dashboard": 20,
+        "deyraka/yii2-material-dashboard": 10
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

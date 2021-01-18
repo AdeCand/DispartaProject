@@ -17,7 +17,7 @@ class NegaraCari extends Negara
     public function rules()
     {
         return [
-            [['id'], 'integer'],
+            [['id_negara'], 'integer'],
             [['negara', 'kawasan'], 'safe'],
         ];
     }
@@ -58,7 +58,7 @@ class NegaraCari extends Negara
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'id' => $this->id,
+            'id_negara' => $this->id_negara,
         ]);
 
         $query->andFilterWhere(['like', 'negara', $this->negara])
