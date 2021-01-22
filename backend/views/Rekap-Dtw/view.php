@@ -2,18 +2,39 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-
+use yii\helpers\ArrayHelper;
+use backend\models\Kecamatan;
+use backend\models\Dtw;
 /* @var $this yii\web\View */
 /* @var $model backend\models\RekapDtw */
 
-$this->title = $model->id_dtw;
-$this->params['breadcrumbs'][] = ['label' => 'Rekap Dtws', 'url' => ['index']];
+$this->title = $model->nama_destinasi;
+$this->params['breadcrumbs'][] = ['label' => 'Rekap DTW', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
+<br>
 <div class="rekap-dtw-view">
-
-    <h1><?= Html::encode($this->title) ?></h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div class="col-sm-12">
+    <h4>
+        <?= DetailView::widget([
+        'model' => $model,
+        'attributes' => [
+            [
+                'attribute' => 'Update : ',
+                'enableSorting' => true,
+                'value' => function ($model) {
+                    return Dtw::findOne($model->nama_destinasi)->nama_dtw;
+                },
+                // 'filter'=>ArrayHelper::map(Kecamatan::find()->all(),'kecamatan', 'Kecamatan'),
+            ],
+        ],
+    ]) ?>
+    </h4>
 
     <p>
         <?= Html::a('Update', ['update', 'id' => $model->id_dtw], ['class' => 'btn btn-primary']) ?>
@@ -30,12 +51,19 @@ $this->params['breadcrumbs'][] = $this->title;
         'model' => $model,
         'attributes' => [
             'id_dtw',
-            'nama_destinasi',
+            [
+                'attribute' => 'nama_destinasi',
+                'enableSorting' => true,
+                'value' => function ($model) {
+                    return Dtw::findOne($model->nama_destinasi)->nama_dtw;
+                },
+                // 'filter'=>ArrayHelper::map(Kecamatan::find()->all(),'kecamatan', 'Kecamatan'),
+            ],
             'kecamatan',
             'bulan',
             'minggu',
-            'jenis_wisatawan',
-            'jumlah',
+            'jumlah_wisnus',
+            'jumlah_wisman',
             'total',
         ],
     ]) ?>

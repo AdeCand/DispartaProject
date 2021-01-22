@@ -2,17 +2,21 @@
 
 use yii\helpers\Html;
 use yii\widgets\DetailView;
-
+use backend\models\Kecamatan;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Dtw */
 
-$this->title = $model->id_dtw;
+$this->title = $model->nama_dtw;
 $this->params['breadcrumbs'][] = ['label' => 'Dtws', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
 <div class="dtw-view">
-
+<div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
+                    <div class="col-sm-12">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>

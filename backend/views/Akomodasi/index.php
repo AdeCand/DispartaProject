@@ -17,11 +17,10 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="col-md-12">
             <div class="box box-primary">
                 <div class="box-header with-border">
-                    <div class="col-sm-7"></div>
     <h2>Akomodasi</h2>
 
     <p>
-        <?= Html::a('Tambah Data', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Tambah Data', ['create'],['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
@@ -34,14 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id_akomodasi',
             'nama_akomodasi',
-            [
-                'attribute' => 'kecamatan',
-                'enableSorting' => true,
-                'value' => function ($model) {
-                    return Kecamatan::findOne($model->kecamatan)->Kecamatan;
-                },
-                // 'filter'=>ArrayHelper::map(Kecamatan::find()->all(),'kecamatan', 'Kecamatan'),
-            ],
+            'kecamatan',
 
             ['class' => 'yii\grid\ActionColumn'],
         ],

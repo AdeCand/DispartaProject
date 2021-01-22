@@ -20,8 +20,7 @@ use backend\models\Kecamatan;
 
     <?= $form->field($model, 'nama_akomodasi')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'kecamatan')->dropDownList(
-                ArrayHelper::map(Kecamatan::find()->all(),'id_kec', 'Kecamatan'),['prompt'=>'Select Option']);?>
+    <?= $form->field($model, 'kecamatan')->dropDownList(['Batu' => 'Batu', 'Junrejo' => 'Junrejo', 'Bumiaji' => 'Bumiaji'],['prompt'=>'Pilih Kecamatan']) ?>
     <div class="form-group">
         <?= Html::submitButton('Save', ['class' => 'btn btn-success']) ?>
     </div>

@@ -9,7 +9,10 @@ use yii\widgets\ActiveForm;
 ?>
 
 <div class="kecamatan-form">
-
+	<div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
     <?php $form = ActiveForm::begin(); ?>
 
     <?= $form->field($model, 'Kecamatan')->textInput(['maxlength' => true]) ?>

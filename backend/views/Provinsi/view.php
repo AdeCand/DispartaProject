@@ -6,13 +6,17 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Provinsi */
 
-$this->title = $model->id_provinsi;
-$this->params['breadcrumbs'][] = ['label' => 'Provinsis', 'url' => ['index']];
+$this->title = $model->provinsi;
+$this->params['breadcrumbs'][] = ['label' => 'Provinsi', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
+<br>
 <div class="provinsi-view">
-
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>

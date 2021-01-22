@@ -32,11 +32,10 @@ class RekapDtw extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['nama_destinasi', 'kecamatan', 'bulan', 'minggu', 'jenis_wisatawan', 'jumlah', 'total'], 'required'],
-            [['kecamatan', 'minggu', 'jumlah', 'total'], 'integer'],
-            [['nama_destinasi'], 'string', 'max' => 50],
+            [['nama_destinasi', 'kecamatan', 'bulan', 'minggu', 'jumlah_wisnus','jumlah_wisman', 'total'], 'required'],
+            [['minggu', 'jumlah_wisnus','jumlah_wisman', 'total'], 'integer'],
+            [['nama_destinasi','kecamatan'], 'string', 'max' => 50],
             [['bulan'], 'string', 'max' => 10],
-            [['jenis_wisatawan'], 'string', 'max' => 25],
         ];
     }
 
@@ -51,8 +50,8 @@ class RekapDtw extends \yii\db\ActiveRecord
             'kecamatan' => 'Kecamatan',
             'bulan' => 'Bulan',
             'minggu' => 'Minggu',
-            'jenis_wisatawan' => 'Jenis Wisatawan',
-            'jumlah' => 'Jumlah',
+            'jumlah_wisnus' => 'Jumlah Wisatawan Nusantara',
+            'jumlah_wisman' => 'Jumlah Wisatawan Manca Negara',
             'total' => 'Total',
         ];
     }

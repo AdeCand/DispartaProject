@@ -17,8 +17,8 @@ class AkomodasiCari extends Akomodasi
     public function rules()
     {
         return [
-            [['id_akomodasi', 'kecamatan'], 'integer'],
-            [['nama_akomodasi'], 'safe'],
+            [['id_akomodasi'], 'integer'],
+            [['nama_akomodasi','kecamatan'], 'safe'],
         ];
     }
 

@@ -28,7 +28,7 @@ class Dtw extends \yii\db\ActiveRecord
     {
         return [
             [['nama_dtw', 'kecamatan'], 'required'],
-            [['nama_dtw', 'kecamatan'], 'integer'],
+            [['nama_dtw','kecamatan'], 'string', 'max' => 50],
         ];
     }
 
@@ -39,7 +39,7 @@ class Dtw extends \yii\db\ActiveRecord
     {
         return [
             'id_dtw' => 'Id Dtw',
-            'nama_dtw' => 'Nama Dtw',
+            'nama_dtw' => 'Nama Daya Tarik Wisata',
             'kecamatan' => 'Kecamatan',
         ];
     }

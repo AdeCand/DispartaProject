@@ -5,13 +5,13 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model backend\models\RekapDtw */
 
-$this->title = 'Create Rekap Dtw';
+$this->title = 'Tambah Rekap DTW';
 $this->params['breadcrumbs'][] = ['label' => 'Rekap Dtws', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="rekap-dtw-create">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h2 class="box box-primary box-header with-border"><?= Html::encode($this->title) ?></h2>
 
     <?= $this->render('_form', [
         'model' => $model,

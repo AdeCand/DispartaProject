@@ -5,7 +5,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="<?= $directoryAsset ?>/img/log.jpg" class="img-circle" alt="User Image"/>
+                <img src="https://cdn.pixabay.com/photo/2017/02/23/13/05/profile-2092113_960_720.png" class="img-circle" alt="User Image"/>
             </div>
             <div class="pull-left info">
                 <p><?= Yii::$app->user->identity->username ?></p>
@@ -30,36 +30,29 @@
                 'options' => ['class' => 'sidebar-menu tree', 'data-widget'=> 'tree'],
                 'items' => [
                     ['label' => 'Menu', 'options' => ['class' => 'header']],
-                    ['label' => 'Dashboard', 'icon' => 'dashboard', 'url' => ['']],
+                    ['label' => 'Dashboard', 'icon' => 'dashboard', 'url' => Yii::$app->homeUrl ],
                     
                     ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
 
                     [
-                        'label' => 'Master',
-                        'icon' => 'database',
+                        'label' => 'Data Kunjungan Wisata',
+                        'icon' => 'map',
                         'url' => '#',
                         'items' => [
-                            [
-                                'label' => 'Data Kunjungan Wisata',
-                                'icon' => 'map',
-                                'url' => '#',
-                                'items' => [
-                                    ['label' => 'Akomodasi', 'icon' => 'hotel', 'url' => ['/akomodasi'],],
-                                    ['label' => 'Daya Tarik Wisata', 'icon' => 'tripadvisor', 'url' => ['/dtw'],],
-                                ],
-                            ],
-                            [
-                                'label' => 'Data Lokasi',
-                                'icon' => 'map-marker',
-                                'url' => '#',
-                                'items' => [
-                                    ['label' => 'Negara', 'icon' => 'flag-checkered', 'url' => ['/negara'],],
-                                    ['label' => 'Provinsi', 'icon' => 'flag', 'url' => ['/provinsi'],],
-                                    ['label' => 'Kecamatan', 'icon' => 'flag-o', 'url' => ['/kecamatan'],],
-                                ],
-                            ],
+                            ['label' => 'Akomodasi', 'icon' => 'hotel', 'url' => ['/akomodasi'],],
+                            ['label' => 'Daya Tarik Wisata', 'icon' => 'tripadvisor', 'url' => ['/dtw'],],
                         ],
                     ],
+                    [
+                        'label' => 'Data Lokasi',
+                        'icon' => 'map-marker',
+                        'url' => '#',
+                        'items' => [
+                            ['label' => 'Negara', 'icon' => 'flag-checkered', 'url' => ['/negara'],],
+                            ['label' => 'Provinsi', 'icon' => 'flag', 'url' => ['/provinsi'],],
+                        ],
+                    ],
+
 
                     [
                         'label' => 'Report',

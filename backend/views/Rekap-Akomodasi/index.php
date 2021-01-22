@@ -11,7 +11,10 @@ $this->title = 'Rekap Akomodasis';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="rekap-akomodasi-index">
-
+<div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>

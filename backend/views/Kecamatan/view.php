@@ -6,13 +6,17 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Kecamatan */
 
-$this->title = $model->id_kec;
-$this->params['breadcrumbs'][] = ['label' => 'Kecamatans', 'url' => ['index']];
+$this->title = $model->Kecamatan;
+$this->params['breadcrumbs'][] = ['label' => 'Kecamatan', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
 ?>
+<br>
 <div class="kecamatan-view">
-
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>

@@ -6,48 +6,191 @@ $this->title = 'Dinas Pariwisata Kota Batu';
 ?>
 <div class="site-index">
 
-    <div class="jumbotron">
-        <h1>Congratulations!</h1>
+<!-- Main content -->
+    <section class="content">
+      <!-- Small boxes (Stat box) -->
+      <div class="row">
+        <div class="col-lg-4 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3><?php $query = (new \yii\db\Query())->from('user');
+                        $sum = $query->count('id');
+                        echo $sum; ?></h3>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
-    </div>
-
-    <div class="body-content">
-
-        <div class="row">
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+              <p>Akomodasi</p>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+            <div class="icon">
+              <i class="fa fa-user"></i>
             </div>
-            <div class="col-lg-4">
-                <h2>Heading</h2>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.</p>
-
-                <p><a class="btn btn-default" href="http://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
-            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
         </div>
+        <!-- ./col -->
+        <div class="col-lg-4 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-green">
+            <div class="inner">
+              <h3><?php $query = (new \yii\db\Query())->from('akomodasi');
+                        $sum = $query->count('id_akomodasi');
+                        echo $sum; ?></h3>
 
-    </div>
+              <p>Akomodasi</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-hotel"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-4 col-xs-6">
+          <!-- small box -->
+          <div class="small-box bg-yellow">
+            <div class="inner">
+              <h3><?php $query = (new \yii\db\Query())->from('dtw');
+                        $sum = $query->count('id_dtw');
+                        echo $sum; ?></h3>
+
+              <p>Daya Tarik Wisata</p>
+            </div>
+            <div class="icon">
+              <i class="fa fa-tripadvisor"></i>
+            </div>
+            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <!-- ./col -->
+      </div>
+      <!-- /.row -->
+      <!-- Main row -->
+      <div class="row">
+        <!-- Left col -->
+        <section class="col-lg-7 connectedSortable">
+
+          <!-- quick email widget -->
+          <div class="box box-info">
+            <div class="box-header">
+              <i class="fa fa-bullhorn"></i>
+
+              <h3 class="box-title">Pengumuman</h3>
+              <!-- tools box -->
+              <div class="pull-right box-tools">
+                <button type="button" class="btn btn-info btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip"
+                        title="Remove">
+                  <i class="fa fa-times"></i></button>
+              </div>
+              <!-- /. tools -->
+            </div>
+            <div class="box-body">
+              <form action="#" method="post">
+                <div class="form-group">
+                  <input type="email" class="form-control" name="emailto" placeholder="Email to:">
+                </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject">
+                </div>
+                <div>
+                  <textarea class="textarea" placeholder="Message"
+                            style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="box-footer clearfix">
+              <button type="button" class="pull-right btn btn-default" id="sendEmail">Send
+                <i class="fa fa-arrow-circle-right"></i></button>
+            </div>
+          </div>
+
+        </section>
+        <!-- /.Left col -->
+        <!-- right col (We are only adding the ID to make the widgets sortable)-->
+        <section class="col-lg-5 connectedSortable">
+          
+          <!-- Calendar -->
+          <div class="box box-solid bg-green-gradient">
+            <div class="box-header">
+              <i class="fa fa-calendar"></i>
+
+              <h3 class="box-title">Calendar</h3>
+              <!-- tools box -->
+              <div class="pull-right box-tools">
+                <!-- button with a dropdown -->
+                <div class="btn-group">
+                  <button type="button" class="btn btn-success btn-sm dropdown-toggle" data-toggle="dropdown">
+                    <i class="fa fa-bars"></i></button>
+                  <ul class="dropdown-menu pull-right" role="menu">
+                    <li><a href="#">Add new event</a></li>
+                    <li><a href="#">Clear events</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">View calendar</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-success btn-sm" data-widget="collapse"><i class="fa fa-minus"></i>
+                </button>
+                <button type="button" class="btn btn-success btn-sm" data-widget="remove"><i class="fa fa-times"></i>
+                </button>
+              </div>
+              <!-- /. tools -->
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body no-padding">
+              <!--The calendar -->
+              <div id="calendar" style="width: 100%"></div>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer text-black">
+              <div class="row">
+                <div class="col-sm-6">
+                  <!-- Progress bars -->
+                  <div class="clearfix">
+                    <span class="pull-left">Task #1</span>
+                    <small class="pull-right">90%</small>
+                  </div>
+                  <div class="progress xs">
+                    <div class="progress-bar progress-bar-green" style="width: 90%;"></div>
+                  </div>
+
+                  <div class="clearfix">
+                    <span class="pull-left">Task #2</span>
+                    <small class="pull-right">70%</small>
+                  </div>
+                  <div class="progress xs">
+                    <div class="progress-bar progress-bar-green" style="width: 70%;"></div>
+                  </div>
+                </div>
+                <!-- /.col -->
+                <div class="col-sm-6">
+                  <div class="clearfix">
+                    <span class="pull-left">Task #3</span>
+                    <small class="pull-right">60%</small>
+                  </div>
+                  <div class="progress xs">
+                    <div class="progress-bar progress-bar-green" style="width: 60%;"></div>
+                  </div>
+
+                  <div class="clearfix">
+                    <span class="pull-left">Task #4</span>
+                    <small class="pull-right">40%</small>
+                  </div>
+                  <div class="progress xs">
+                    <div class="progress-bar progress-bar-green" style="width: 40%;"></div>
+                  </div>
+                </div>
+                <!-- /.col -->
+              </div>
+              <!-- /.row -->
+            </div>
+          </div>
+          <!-- /.box -->
+
+        </section>
+        <!-- right col -->
+      </div>
+      <!-- /.row (main row) -->
+
+    </section>
+
 </div>

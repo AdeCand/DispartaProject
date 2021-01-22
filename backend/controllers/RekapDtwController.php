@@ -8,6 +8,7 @@ use backend\models\RekapDtwCari;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\helpers\Json;
 
 /**
  * RekapDtwController implements the CRUD actions for RekapDtw model.
@@ -123,5 +124,11 @@ class RekapDtwController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+
+    public function actionGetKec($nama_dtw){
+        $kecamatan = RekapDtw::findOne($nama_dtw);
+        echo Json::encode($kecamatan);
     }
 }
