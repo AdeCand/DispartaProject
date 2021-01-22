@@ -1,21 +1,22 @@
 <?php
 
 use rce\material\widgets\Card;
+use Yii\helpers\Html;
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Aplikasi Disparta';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1>Selamat Datang </h1>        
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <p><a class="btn btn-lg btn-success" href="<?= Yii::$app->request->baseUrl. '/index.php?r=laporan-kunjungan' ?>">Buat Laporan Kunjungan</a></p>
     </div>
 
     <div class="body-content">
+
+    <p class="lead">Data Kunjungan Anda</p>
 
         <div class="row">
             <div class="col-lg-3 col-md-6 col-sm-6">
