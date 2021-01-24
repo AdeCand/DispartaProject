@@ -8,7 +8,7 @@ use backend\models\DtwCari;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\helpers\Json;
 /**
  * DtwController implements the CRUD actions for Dtw model.
  */
@@ -123,5 +123,9 @@ class DtwController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+    public function actionGetKecamatan($namaDtw){
+        $kecamatan = Dtw::findOne($namaDtw);
+        echo Json::encode($kecamatan);
     }
 }

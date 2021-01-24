@@ -34,7 +34,7 @@ if (Yii::$app->controller->action->id === 'login') {
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <?= Html::csrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
-        <link rel="icon" type="image/png" href="<?= $directoryAsset ?>/img/log.jpg">
+        <link rel="icon" type="image/png" href="https://portaldata.batukota.go.id/uploads/group/2019-12-05-010714.327463468px-LogoKotaBatuJawaTimurSealofBatuEastJava.jpg">
         <?php $this->head() ?>
     </head>
     <body class="hold-transition skin-blue sidebar-mini">

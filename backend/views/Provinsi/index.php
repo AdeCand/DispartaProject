@@ -7,15 +7,19 @@ use yii\grid\GridView;
 /* @var $searchModel backend\models\ProvinsiCari */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Provinsis';
+$this->title = 'Provinsi';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
+<br>
 <div class="provinsi-index">
-
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <div class="box-header with-border">
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Create Provinsi', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a('Tambah Provinsi', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>

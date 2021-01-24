@@ -17,7 +17,7 @@ class RekapDtwCari extends RekapDtw
     public function rules()
     {
         return [
-            [['id_dtw', 'kecamatan', 'minggu', 'jumlah', 'total'], 'integer'],
+            [['id_dtw', 'kecamatan', 'minggu', 'jumlah_wisnus', 'jumlah_wisman' , 'total'], 'integer'],
             [['nama_destinasi', 'bulan', 'jenis_wisatawan'], 'safe'],
         ];
     }
@@ -61,13 +61,15 @@ class RekapDtwCari extends RekapDtw
             'id_dtw' => $this->id_dtw,
             'kecamatan' => $this->kecamatan,
             'minggu' => $this->minggu,
-            'jumlah' => $this->jumlah,
+            'jumlah_wisnus' => $this->jumlah_wisnus,
+            'jumlah_wisman' => $this->jumlah_wisman,
             'total' => $this->total,
         ]);
 
         $query->andFilterWhere(['like', 'nama_destinasi', $this->nama_destinasi])
             ->andFilterWhere(['like', 'bulan', $this->bulan])
-            ->andFilterWhere(['like', 'jenis_wisatawan', $this->jenis_wisatawan]);
+            ->andFilterWhere(['like', 'jumlah_wisnus', $this->jumlah_wisnus])
+            ->andFilterWhere(['like', 'jumlah_wisman', $this->jumlah_wisman]);
 
         return $dataProvider;
     }

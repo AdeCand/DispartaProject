@@ -6,13 +6,11 @@ use yii\helpers\Html;
 /* @var $model backend\models\Akomodasi */
 
 $this->title = 'Update : ' . $model->nama_akomodasi;
-$this->params['breadcrumbs'][] = ['label' => 'Akomodasis', 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->id_akomodasi, 'url' => ['view', 'id' => $model->id_akomodasi]];
+$this->params['breadcrumbs'][] = ['label' => 'Akomodasi', 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => $model->nama_akomodasi, 'url' => ['view', 'id' => $model->id_akomodasi]];
 $this->params['breadcrumbs'][] = 'Update';
 ?>
 <div class="akomodasi-update">
-
-    <h1><?= Html::encode($this->title) ?></h1>
 
     <?= $this->render('_form', [
         'model' => $model,

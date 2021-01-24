@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Akomodasi', 'url' => ['index']];
 ?>
 <br>
 <div class="akomodasi-view">
-<div class="row">
+    <div class="row">
         <div class="col-md-12">
             <div class="box box-primary">
                 <div class="box-header with-border">
@@ -36,14 +36,7 @@ $this->params['breadcrumbs'][] = ['label' => 'Akomodasi', 'url' => ['index']];
         'attributes' => [
             'id_akomodasi',
             'nama_akomodasi',
-            [
-                'attribute' => 'kecamatan',
-                'enableSorting' => true,
-                'value' => function ($model) {
-                    return Kecamatan::findOne($model->kecamatan)->Kecamatan;
-                },
-                // 'filter'=>ArrayHelper::map(Kecamatan::find()->all(),'kecamatan', 'Kecamatan'),
-            ],
+            'kecamatan'
         ],
     ]) ?>
 

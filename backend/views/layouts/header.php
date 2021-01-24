@@ -7,7 +7,7 @@ use yii\helpers\Html;
 
 <header class="main-header">
 
-    <?= Html::a('<span class="logo-mini">SI_P</span><span class="logo-lg">'.'DISPARTA' . '</span>', Yii::$app->homeUrl, ['class' => 'logo']) ?>
+    <?= Html::a('<span class="logo-mini">SI_P</span><span class="logo-lg">'.'<img src="https://portaldata.batukota.go.id/uploads/group/2019-12-05-010714.327463468px-LogoKotaBatuJawaTimurSealofBatuEastJava.jpg" class="img" alt="User Image"/>'.'DISPARTA' . '</span>', Yii::$app->homeUrl, ['class' => 'logo']) ?>
 
     <nav class="navbar navbar-static-top" role="navigation">
 

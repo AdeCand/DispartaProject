@@ -8,6 +8,7 @@ use backend\models\KecamatanCari;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\helpers\Json;
 
 /**
  * KecamataController implements the CRUD actions for Kecamatan model.
@@ -123,5 +124,10 @@ class KecamatanController extends Controller
         }
 
         throw new NotFoundHttpException('The requested page does not exist.');
+    }
+
+    public function actionGetKecamatan($namaDtw){
+        $kecamatan = Kecamatan::findOne($namaDtw);
+        echo Json::encode($kecamatan);
     }
 }

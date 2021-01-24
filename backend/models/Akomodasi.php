@@ -28,8 +28,7 @@ class Akomodasi extends \yii\db\ActiveRecord
     {
         return [
             [['nama_akomodasi', 'kecamatan'], 'required'],
-            [['kecamatan'], 'integer'],
-            [['nama_akomodasi'], 'string', 'max' => 50],
+            [['nama_akomodasi','kecamatan'], 'string', 'max' => 50],
         ];
     }
 
