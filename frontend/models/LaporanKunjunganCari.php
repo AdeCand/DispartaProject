@@ -17,7 +17,8 @@ class LaporanKunjunganCari extends LaporanKunjungan
     public function rules()
     {
         return [
-            [['id', 'id_user', 'kategori_akw', 'negara', 'provinsi', 'pria', 'wanita', 'jumlah'], 'integer'],
+            [['id_laporan_kunjungan', 'id_user', 'negara', 'provinsi', 'pria', 'wanita', 'jumlah'], 'integer'],
+            [['jenis_wisatawan'], 'safe'],
         ];
     }
 
@@ -57,15 +58,16 @@ class LaporanKunjunganCari extends LaporanKunjungan
 
         // grid filtering conditions
         $query->andFilterWhere([
-            'id' => $this->id,
+            'id_laporan_kunjungan' => $this->id_laporan_kunjungan,
             'id_user' => $this->id_user,
-            'kategori_akw' => $this->kategori_akw,
             'negara' => $this->negara,
             'provinsi' => $this->provinsi,
             'pria' => $this->pria,
             'wanita' => $this->wanita,
             'jumlah' => $this->jumlah,
         ]);
+
+        $query->andFilterWhere(['like', 'jenis_wisatawan', $this->jenis_wisatawan]);
 
         return $dataProvider;
     }

@@ -6,6 +6,7 @@
 
 use yii\helpers\Html;
 use yii\bootstrap\ActiveForm;
+use yii\helpers\Url;
 
 $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
@@ -15,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="col-md-4 col-sm-6 ml-auto mr-auto"><!-- col-lg-4  -->
         <div class="card card-login card-hidden">
             <div class="card-header card-header-rose text-center"  data-background-color="orange">
-                <h4 class="card-title">Login</h4>
+                <h4 class="card-title">Aplikasi Disparta</h4>
                 <div class="social-line">
                     <a href="#" class="btn btn-just-icon btn-link btn-white">
                         <i class="fa fa-facebook-square"></i>
@@ -46,7 +47,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             {input}
                         </div>
                         '
-                        ])->textInput()->label(false) ?>
+                        ])->textInput(["class"=>"form-control","placeholder"=>"Username"])->label(false) ?>
                   <!--   <label class="bmd-label-floating">Username</label>
                     <input type="text" class="form-control"> -->
                 </span>
@@ -61,7 +62,7 @@ $this->params['breadcrumbs'][] = $this->title;
                             {input}
                         </div>
                         '
-                        ])->passwordInput(["class"=>"form-control","placeholder"=>"Password..."]) ?>
+                        ])->passwordInput(["class"=>"form-control","placeholder"=>"Password"]) ?>
                         <!-- <input type="password" class="form-control" placeholder="Password..."> -->
                 </span>
                 <span class="bmd-form-group">

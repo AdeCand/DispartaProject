@@ -9,7 +9,7 @@ $params = array_merge(
 return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => ['log'],    
     'controllerNamespace' => 'frontend\controllers',
     'components' => [
                      
@@ -45,6 +45,12 @@ return [
             ],
         ],
         */
+
+        // 'urlManagerBackend' => [
+        //     'class' => 'yii\web\urlManager',
+        //     'baseUrl' => '/DispartaProject/backend/web/index.php',
+        //     'enablePrettyUrl' => true,
+        // ],
     ],
     'params' => $params,
 ];

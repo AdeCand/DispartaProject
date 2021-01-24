@@ -19,11 +19,19 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "dmstr/yii2-adminlte-asset": "^2.1",
+
+        "ramosisw/yii2-material-dashboard": "dev-master",
+        "ricar2ce/yii2-material-theme": "*",
+        "deyraka/yii2-material-dashboard": "v1.0.0-beta",
+        "hosannahighertech/yii2-light-bootstrap": "*",
+        "yiister/yii2-gentelella": "~1.0"
+
         "ricar2ce/yii2-material-theme": "*",
         "kartik-v/yii2-widget-select2": "@dev",
         "kartik-v/yii2-export": "*",
         "kartik-v/yii2-mpdf": "*",
         "kartik-v/yii2-grid": "dev-master"
+
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",
