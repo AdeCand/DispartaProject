@@ -76,7 +76,16 @@ class SiteController extends Controller
     public function actionIndex()
     {
         // $model = User::tableName()->findbypk($id);
-        return $this->render('index');
+        if (!Yii::$app->user->IsGuest){   
+
+            return $this->render('index');   
+
+        } else{                           
+        
+            $this->redirect(array('login'));  
+
+        }
+        // return $this->render('index');
     }
 
     /**
@@ -89,7 +98,7 @@ class SiteController extends Controller
         if (!Yii::$app->user->isGuest) {
             return $this->goHome();
         }
-
+        
         $model = new LoginForm();
         if ($model->load(Yii::$app->request->post()) && $model->login()) {
             return $this->goBack();
@@ -110,8 +119,10 @@ class SiteController extends Controller
     public function actionLogout()
     {
         Yii::$app->user->logout();
-
-        return $this->goHome();
+        $model = new LoginForm();
+        // $model->password = '';
+        return $this->redirect(array('login'));
+        // return $this->goHome();
     }
 
     /**

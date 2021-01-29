@@ -38,6 +38,8 @@ class LaporanKunjunganController extends Controller
     {
         $laporan_kunjungan = LaporanKunjungan::find()->all();        
         $no = 1; 
+        // $query = "SELECT * FROM laporan_kunjungan INNER JOIN negara, provinsi 
+        // ON laporan_kunjungan.id_laporan = negara.negara, provinsi.provinsi"; 
         // $nama_negara = Negara::find()->all();
         return $this->render('index', [
             'laporan_kunjungan' => $laporan_kunjungan,

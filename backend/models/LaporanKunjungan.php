@@ -67,7 +67,7 @@ class LaporanKunjungan extends \yii\db\ActiveRecord
      */
     public function getNegara0()
     {
-        return $this->hasOne(Negara::className(), ['id_negara' => 'negara']);
+        return $this->hasOne(Negara::className(), ['id_negara' =>'negara']);
     }
 
     /**

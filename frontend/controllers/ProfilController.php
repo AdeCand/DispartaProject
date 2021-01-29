@@ -35,17 +35,23 @@ class ProfilController extends Controller
      */
     public function actionIndex()
     {
+        $id = Yii::$app->user->identity->id;
+        // $user = User::findOne($id);
+
+        // $id= new User();
         // $searchModel = new UserCari();
-        $modelUser = User::find()->where(['id'=>$id])->one();
+        // $modelUser = User::find()->where(['id'=>$id])->one();
         // $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
         // $model = User::tableName()
         //     ->joinWith('dtw')
         //     ->orderBy('dtw.id_dtw', 'user.id')
         //     ->all();
 
-        return $this->render('index', [
-            'modelUser' => $modelUser
-        ]);
+        // return $this->render('view', [
+        //     'user' => $this->findModel($id),
+        // ]);
+
+        return $this->actionView($id);
     }
 
     /**

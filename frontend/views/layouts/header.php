@@ -60,7 +60,7 @@ use yii\helpers\Html;
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-                  <a class="dropdown-item" href="#">Profile</a>
+                  <a class="dropdown-item" href="<?= Yii::$app->request->baseUrl. '/index.php?r=profil'?>">Profile</a>
                   <a class="dropdown-item" href="#">Settings</a>
                   <div class="dropdown-divider"></div>
                   <a class="dropdown-item" href="#" style="padding: 0;">

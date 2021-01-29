@@ -15,8 +15,9 @@ $directoryAsset = Yii::$app->assetManager->getPublishedUrl('@vendor/ricar2ce/yii
       <!-- <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"> -->
       <?= Html::csrfMetaTags() ?>
-      <title><?= Html::encode($this->title) ?></title>
+      <title>Login Disparta</title>
       <?php $this->head() ?>
+      <link rel="icon" type="image/png" href="https://portaldata.batukota.go.id/uploads/group/2019-12-05-010714.327463468px-LogoKotaBatuJawaTimurSealofBatuEastJava.jpg">
    </head>
    <body class="off-canvas-sidebar login-page">
       <?php $this->beginBody() ?>

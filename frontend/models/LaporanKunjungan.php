@@ -34,7 +34,7 @@ class LaporanKunjungan extends \yii\db\ActiveRecord
      */
     public function rules()
     {
-        return [
+        return [    
             [['id_user', 'jenis_wisatawan', 'negara', 'provinsi', 'pria', 'wanita', 'jumlah'], 'required'],
             [['id_user', 'negara', 'provinsi', 'pria', 'wanita', 'jumlah'], 'integer'],
             [['jenis_wisatawan'], 'string', 'max' => 25],
