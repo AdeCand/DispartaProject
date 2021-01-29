@@ -25,8 +25,7 @@
         "deyraka/yii2-material-dashboard": "v1.0.0-beta",
         "hosannahighertech/yii2-light-bootstrap": "*",
         "yiister/yii2-gentelella": "~1.0",
-
-        "ricar2ce/yii2-material-theme": "*",
+        
         "kartik-v/yii2-widget-select2": "@dev",
         "kartik-v/yii2-export": "*",
         "kartik-v/yii2-mpdf": "*",
