@@ -1,7 +1,9 @@
 <?php
 
 use yii\helpers\Html;
+use yii\helpers\ArrayHelper;
 use yii\widgets\ActiveForm;
+use yii\frontend\models\LaporanKunjungan;
 
 /* @var $this yii\web\View */
 /* @var $model frontend\models\LaporanKunjungan */
@@ -14,7 +16,8 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'id_user')->textInput() ?>
 
-    <?= $form->field($model, 'jenis_wisatawan')->textInput(['maxlength' => true]) ?>
+    <?= $form->field($model, 'jenis_wisatawan')->dropDownList(['Wisatawan Asing' => 'Wisatawan Asing', 
+    'Wisatawan  Lokal' => 'Wisatawan Lokal']) ?>
 
     <?= $form->field($model, 'negara')->textInput() ?>
 

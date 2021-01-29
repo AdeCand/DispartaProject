@@ -16,9 +16,9 @@ $this->params['breadcrumbs'][] = $this->title;
     <div class="col-md-4 col-sm-6 ml-auto mr-auto"><!-- col-lg-4  -->
         <div class="card card-login card-hidden">
             <div class="card-header card-header-rose text-center"  data-background-color="orange">
-                <h4 class="card-title">Aplikasi Disparta</h4>
+                
                 <div class="social-line">
-                    <a href="#" class="btn btn-just-icon btn-link btn-white">
+                    <!-- <a href="#" class="btn btn-just-icon btn-link btn-white">
                         <i class="fa fa-facebook-square"></i>
                     </a>
                     <a href="#" class="btn btn-just-icon btn-link btn-white">
@@ -26,8 +26,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     </a>
                     <a href="#" class="btn btn-just-icon btn-link btn-white">
                         <i class="fa fa-google-plus"></i>
-                    </a>
+                    </a> -->
+                    <img src="https://portaldata.batukota.go.id/uploads/group/2019-12-05-010714.327463468px-LogoKotaBatuJawaTimurSealofBatuEastJava.jpg" style="max-width: 45px;">
                 </div>
+                <h4 class="card-title">Aplikasi Disparta</h4>
             </div>
             <?php $form = ActiveForm::begin([
                     'id' => 'login-form',

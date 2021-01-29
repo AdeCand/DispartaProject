@@ -15,12 +15,15 @@
     }else {
         $img = $config::sidebarBackgroundImage();
     }
+    use yii\helpers\Html;
 ?>
+<link rel="icon" type="image/png" href="https://portaldata.batukota.go.id/uploads/group/2019-12-05-010714.327463468px-LogoKotaBatuJawaTimurSealofBatuEastJava.jpg">
 <div class="sidebar" data-color="<?= $config::sidebarColor() ?>" data-background-color="<?= $config::sidebarBackgroundColor()  ?>">
     <div class="logo">
         <a href="<?=  Yii::$app->request->baseUrl?>" class="simple-text logo-mini">
             <?php
             if(empty($config::logoMini())) { ?>
+            
                 <img src="<?=$directoryAsset;?>/img/logo_1.png" style="max-width: 45px;">
             <?php } else {
                 echo $config::logoMini();
@@ -62,7 +65,7 @@
         <a href="<?=  Yii::$app->request->baseUrl?>" class="simple-text logo-mini">
             <?php
             if(empty($config::logoMini())) { ?>
-                <img src="<?=$directoryAsset;?>/img/logo_1.png" style="max-width: 45px;">
+                <img src="https://portaldata.batukota.go.id/uploads/group/2019-12-05-010714.327463468px-LogoKotaBatuJawaTimurSealofBatuEastJava.jpg" style="max-width: 45px;">
             <?php } else {
                 echo $config::logoMini();
             }
@@ -82,7 +85,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="./user.html">
+            <a class="nav-link" href="<?=  Yii::$app->request->baseUrl. '/index.php?r=profil' ?>">
               <i class="material-icons">person</i>
               <p>User Profile</p>
             </a>
@@ -93,7 +96,7 @@
               <p>Laporan Kunjungan</p>
             </a>
           </li>
-          
+                   
         </ul>
       </div>
     </div>
